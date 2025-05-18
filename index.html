@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurorion</title>
+    <link rel="icon" href="images/logo.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="aurorion.css">
+
+    <!-- Designed by @Makayla.jaee -->
+  </head>
+
+  <body>
+    <header class="navbar">
+  <div class="nav-content">
+    <img src="images/logo.png" alt="Aurorion Logo" class="logo">
+    <nav class="nav-links">
+      <a href="#events">Events</a>
+      <a href="#contact">Contact</a>
+      <a href="#gallery">Gallery</a>
+    </nav>
+  </div>
+</header>
+    <div id="popup" class="popup">
+    <div class="popup-content">
+        <span id="close-popup" class="close">&times;</span>
+        <p>This site was created by <strong>Makayla ☺️</strong><br>
+        Instagram: <a href="https://instagram.com/makayla.jaee" target="_blank">@makayla.jaee</a><br>
+        443-833-4880
+    </p>
+        
+    </div>
+    </div>
+    <header class="hero" role="banner"></header>
+    <main>
+      <hr>
+      <section class="content">
+        <h1>UPCOMING EVENTS</h1>
+        <section class="events" aria-label="Event Listings">
+          <!-- Each event block -->
+          <article class="event">
+            <img src="images/GoldenHH5_23.jpg" alt="Flyer Golden Happy Hour: Yellow text over image of people dancing">
+            <h2>Golden Happy Hour</h2>
+            <p class="date">May 23</p>
+            <a href="https://partiful.com/e/QsrMHAmGtctwnkOc7R9S" class="rsvp">RSVP</a>
+          </article>
+
+          <article class="event">
+            <img src="images/IshwaraHH5_4.jpg" alt="Flyer Ishwara’s Heart Fundraiser: Black text over image of heart">
+            <h2>Ishwara’s Heart Fundraiser</h2>
+            <p class="date">May 4</p>
+            <a href="#" class="rsvp">RSVP</a>
+          </article>
+
+          <article class="event">
+            <img src="images/FigureDrawing4_27.jpg" alt="Flyer Figure Drawing: Brown background with woman outline and black text">
+            <h2>Figure Drawing</h2>
+            <p class="date">May 27</p>
+            <a href="#" class="rsvp">RSVP</a>
+          </article>
+
+          <article class="event">
+            <img src="images/GoldenHH4_25.avif" alt="Flyer Golden Happy Hour: Black text over shadow of woman">
+            <h2>Golden Happy Hour</h2>
+            <p class="date">April 25</p>
+            <a href="https://partiful.com/e/A98SFGURKbcfxY7XiRST" class="rsvp">RSVP</a>
+          </article>
+
+          <article class="event">
+            <img src="images/SipSpin4_19.jpg" alt="Flyer Sip and Spin: Pole dancer with black words">
+            <h2>Sip and Spin</h2>
+            <p class="date">April 19</p>
+            <a href="#" class="rsvp">RSVP</a>
+          </article>
+
+          <article class="event">
+            <img src="images/HH4_4.jpg" alt="Flyer Golden Happy Hour: Martini with grey words">
+            <h2>Golden Happy Hour</h2>
+            <p class="date">April 4</p>
+            <a href="https://partiful.com/e/SpypAKnBS2qGoTeaa9Iz" class="rsvp">RSVP</a>
+          </article>
+        </section>
+      </section>
+    </main>
+<script>
+  window.addEventListener('load', function() {
+    const popup = document.getElementById('popup');
+    const close = document.getElementById('close-popup');
+
+    popup.style.display = 'flex';
+
+    close.addEventListener('click', () => {
+      popup.style.display = 'none';
+    });
+  });
+</script>
+  </body>
+</html>

@@ -1,0 +1,181 @@
+/* 
+Neutral Color HEX: #eae8e2
+Red Color HEX: #5c1010 
+*/
+
+:root {
+  --red-dark: #5c1010;
+  --neutral-light: #f5f3ef;
+  --font-serif: 'Cormorant Garamond', serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: .5rem 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+.nav-links a {
+  color: var(--neutral-light);
+  margin-left: 2rem;
+  font-size: 25px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+}
+
+body {
+    padding-top: 58px;
+    margin: 0;
+    background-color: #5c1010;
+}
+
+.hero {
+  height: 100vh;
+  background: url("images/background_image4.png") center/cover no-repeat;
+}
+
+hr {
+  border: none;
+  border-top: 3px solid #f5f3ef;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cormorant Garamond', serif;
+  color: #eae8e2;
+  font-weight: 700;
+  text-align: center;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+.events {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.event {
+  /*background-color: rgba(234, 232, 226, 0.7); */
+  background-color: #eae8e2;
+  border-radius: 1rem;
+  width: 30%;
+  padding: 1rem;
+  margin-bottom: 40px;
+  box-sizing: border-box;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.event img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.event h2,
+.event .date,
+.event .rsvp {
+  margin: 0.5rem 0;
+  color: #5c1010;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.event h2 {
+    font-size: 30px;
+}
+
+.event .date {
+    font-size: 30px;
+}
+
+.event .rsvp {
+    font-size: 20px;
+    background-color: #5c1010 ;
+    color: #f5f3ef;;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.rsvp {
+  text-decoration: underline;
+  display: inline-block;
+}
+
+.event .rsvp:hover {
+  background-color: #b99a2e;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup-content {
+  background-color: #eae8e2;
+  color: #5c1010;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.popup-content a {
+  color: #5c1010;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.close {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: #eae8e2;
+}
