@@ -6,6 +6,7 @@ Red Color HEX: #5c1010
 :root {
   --red-dark: #5c1010;
   --neutral-light: #f5f3ef;
+  --neutral-dark: #eae8e2;
   --font-serif: 'Cormorant Garamond', serif;
 }
 
@@ -44,13 +45,15 @@ html {
 }
 
 .nav-links a:hover {
-  color: var(--accent);
+  color: var(--red-dark);
 }
 
 body {
     padding-top: 58px;
     margin: 0;
     background-color: #5c1010;
+    color: var(--neutral-dark);
+    font-family: var(--font-serif), serif;
 }
 
 .hero {
@@ -60,13 +63,18 @@ body {
 
 hr {
   border: none;
-  border-top: 3px solid #f5f3ef;
+  border-top: 3px solid var(--neutral-dark);
   margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, 
+h2,
+h3,
+h4,
+h5, 
+h6 {
   font-family: 'Cormorant Garamond', serif;
-  color: #eae8e2;
+  color: var(--neutral-dark);
   font-weight: 700;
   text-align: center;
 }
@@ -85,7 +93,7 @@ h1 {
 
 .event {
   /*background-color: rgba(234, 232, 226, 0.7); */
-  background-color: #eae8e2;
+  background-color: var(--neutral-dark);
   border-radius: 1rem;
   width: 30%;
   padding: 1rem;
@@ -110,8 +118,8 @@ h1 {
 .event .date,
 .event .rsvp {
   margin: 0.5rem 0;
-  color: #5c1010;
-  font-family: 'Cormorant Garamond', serif;
+  color: var(--red-dark);
+  font-family: var(--font-serif), serif;
 }
 
 .event h2 {
@@ -124,18 +132,16 @@ h1 {
 
 .event .rsvp {
     font-size: 20px;
-    background-color: #5c1010 ;
-    color: #f5f3ef;;
+    background-color: var(--red-dark);
+    color: var(--neutral-light);
     padding: 0.5rem 1rem;
     border-radius: 8px;
     display: inline-block;
     transition: background-color 0.3s ease;
+    text-decoration: none;
 }
 
-.rsvp {
-  text-decoration: underline;
-  display: inline-block;
-}
+
 
 .event .rsvp:hover {
   background-color: #b99a2e;
@@ -155,8 +161,8 @@ h1 {
 }
 
 .popup-content {
-  background-color: #eae8e2;
-  color: #5c1010;
+  background-color: var(--neutral-dark);
+  color: var(--red-dark);
   padding: 2rem;
   border-radius: 10px;
   text-align: center;
@@ -165,7 +171,7 @@ h1 {
 }
 
 .popup-content a {
-  color: #5c1010;
+  color: var(--red-dark);
   font-weight: bold;
   text-decoration: none;
 }
@@ -177,5 +183,5 @@ h1 {
   font-size: 2rem;
   font-weight: bold;
   cursor: pointer;
-  color: #eae8e2;
+  color: var(--neutral-dark);
 }
